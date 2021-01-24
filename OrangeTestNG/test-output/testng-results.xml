@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="3" failed="0" total="10" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="70242" started-at="2021-01-24T19:46:50Z" finished-at="2021-01-24T19:48:00Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="70242" started-at="2021-01-24T19:46:50Z" finished-at="2021-01-24T19:48:00Z">
+      <class name="com.qa.orange.tests.AddEmployeeTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.orange.tests.AddEmployeeTest@662f5666]" name="setUp" is-config="true" duration-ms="6308" started-at="2021-01-24T14:47:24Z" finished-at="2021-01-24T14:47:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="addEmployeeTest(java.lang.String, java.lang.String)[pri:0, instance:com.qa.orange.tests.AddEmployeeTest@662f5666]" name="addEmployeeTest" duration-ms="6365" started-at="2021-01-24T14:47:30Z" data-provider="getContactsTestData" finished-at="2021-01-24T14:47:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Cansu ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Jackson]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addEmployeeTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.orange.tests.AddEmployeeTest@662f5666]" name="tearDown" is-config="true" duration-ms="151" started-at="2021-01-24T14:47:36Z" finished-at="2021-01-24T14:47:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.orange.tests.AddEmployeeTest@662f5666]" name="setUp" is-config="true" duration-ms="6654" started-at="2021-01-24T14:47:36Z" finished-at="2021-01-24T14:47:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="addEmployeeTest(java.lang.String, java.lang.String)[pri:0, instance:com.qa.orange.tests.AddEmployeeTest@662f5666]" name="addEmployeeTest" duration-ms="5529" started-at="2021-01-24T14:47:43Z" data-provider="getContactsTestData" finished-at="2021-01-24T14:47:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Yunus]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Lerry]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addEmployeeTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.orange.tests.AddEmployeeTest@662f5666]" name="tearDown" is-config="true" duration-ms="150" started-at="2021-01-24T14:47:49Z" finished-at="2021-01-24T14:47:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.orange.tests.AddEmployeeTest@662f5666]" name="setUp" is-config="true" duration-ms="5406" started-at="2021-01-24T14:47:49Z" finished-at="2021-01-24T14:47:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="addEmployeeTest(java.lang.String, java.lang.String)[pri:0, instance:com.qa.orange.tests.AddEmployeeTest@662f5666]" name="addEmployeeTest" duration-ms="5511" started-at="2021-01-24T14:47:54Z" data-provider="getContactsTestData" finished-at="2021-01-24T14:48:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Adem]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Biden]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addEmployeeTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.orange.tests.AddEmployeeTest@662f5666]" name="tearDown" is-config="true" duration-ms="143" started-at="2021-01-24T14:48:00Z" finished-at="2021-01-24T14:48:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.orange.tests.AddEmployeeTest -->
+      <class name="com.qa.orange.tests.HomePageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.orange.tests.HomePageTest@60dce7ea]" name="setUp" is-config="true" duration-ms="8625" started-at="2021-01-24T14:46:50Z" finished-at="2021-01-24T14:46:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyHomePageTitle()[pri:1, instance:com.qa.orange.tests.HomePageTest@60dce7ea]" name="verifyHomePageTitle" duration-ms="20" started-at="2021-01-24T14:46:59Z" description="verify home page title" finished-at="2021-01-24T14:46:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageTitle -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.orange.tests.HomePageTest@60dce7ea]" name="tearDown" is-config="true" duration-ms="591" started-at="2021-01-24T14:46:59Z" finished-at="2021-01-24T14:46:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.orange.tests.HomePageTest@60dce7ea]" name="setUp" is-config="true" duration-ms="7375" started-at="2021-01-24T14:46:59Z" finished-at="2021-01-24T14:47:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyHomePageHeader()[pri:2, instance:com.qa.orange.tests.HomePageTest@60dce7ea]" name="verifyHomePageHeader" duration-ms="1149" started-at="2021-01-24T14:47:07Z" description="verify home page header" finished-at="2021-01-24T14:47:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageHeader -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.orange.tests.HomePageTest@60dce7ea]" name="tearDown" is-config="true" duration-ms="135" started-at="2021-01-24T14:47:08Z" finished-at="2021-01-24T14:47:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.orange.tests.HomePageTest@60dce7ea]" name="setUp" is-config="true" duration-ms="6647" started-at="2021-01-24T14:47:08Z" finished-at="2021-01-24T14:47:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyLoggedInUserTest()[pri:3, instance:com.qa.orange.tests.HomePageTest@60dce7ea]" name="verifyLoggedInUserTest" duration-ms="1012" started-at="2021-01-24T14:47:14Z" description="verify account name method" finished-at="2021-01-24T14:47:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoggedInUserTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.orange.tests.HomePageTest@60dce7ea]" name="tearDown" is-config="true" duration-ms="162" started-at="2021-01-24T14:47:16Z" finished-at="2021-01-24T14:47:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.orange.tests.HomePageTest@60dce7ea]" name="setUp" is-config="true" duration-ms="6029" started-at="2021-01-24T14:47:16Z" finished-at="2021-01-24T14:47:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyAuthentication()[pri:4, instance:com.qa.orange.tests.HomePageTest@60dce7ea]" name="verifyAuthentication" duration-ms="252" started-at="2021-01-24T14:47:22Z" description="verify page URL" finished-at="2021-01-24T14:47:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAuthentication -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.orange.tests.HomePageTest@60dce7ea]" name="tearDown" is-config="true" duration-ms="126" started-at="2021-01-24T14:47:22Z" finished-at="2021-01-24T14:47:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.orange.tests.HomePageTest -->
+      <class name="com.qa.orange.tests.LoginPageTest">
+        <test-method status="FAIL" signature="setUp(java.lang.String)[pri:0, instance:com.qa.orange.tests.LoginPageTest@fd8294b]" name="setUp" is-config="true" duration-ms="0" started-at="2021-01-24T14:48:00Z" finished-at="2021-01-24T14:48:00Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by @Configuration on method setUp but has not been marked @Optional or defined
+in /private/var/folders/7b/wcrs7lqd71j5rd8t24k1yx2r0000gn/T/testng-eclipse--249707949/testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by @Configuration on method setUp but has not been marked @Optional or defined
+in /private/var/folders/7b/wcrs7lqd71j5rd8t24k1yx2r0000gn/T/testng-eclipse--249707949/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:201)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:589)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="verifyLoginPageTitleTest()[pri:1, instance:com.qa.orange.tests.LoginPageTest@fd8294b]" name="verifyLoginPageTitleTest" duration-ms="11" started-at="2021-01-24T14:48:00Z" description="verify page title method" finished-at="2021-01-24T14:48:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginPageTitleTest -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.orange.tests.LoginPageTest@fd8294b]" name="tearDown" is-config="true" duration-ms="0" started-at="2021-01-24T14:48:00Z" finished-at="2021-01-24T14:48:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="setUp(java.lang.String)[pri:0, instance:com.qa.orange.tests.LoginPageTest@fd8294b]" name="setUp" is-config="true" duration-ms="0" started-at="2021-01-24T14:48:00Z" finished-at="2021-01-24T14:48:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="verifySignUpLink()[pri:2, instance:com.qa.orange.tests.LoginPageTest@fd8294b]" name="verifySignUpLink" duration-ms="7" started-at="2021-01-24T14:48:00Z" description="verify sign up link is displayed" finished-at="2021-01-24T14:48:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignUpLink -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.orange.tests.LoginPageTest@fd8294b]" name="tearDown" is-config="true" duration-ms="0" started-at="2021-01-24T14:48:00Z" finished-at="2021-01-24T14:48:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="setUp(java.lang.String)[pri:0, instance:com.qa.orange.tests.LoginPageTest@fd8294b]" name="setUp" is-config="true" duration-ms="0" started-at="2021-01-24T14:48:00Z" finished-at="2021-01-24T14:48:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="loginTest()[pri:3, instance:com.qa.orange.tests.LoginPageTest@fd8294b]" name="loginTest" duration-ms="4" started-at="2021-01-24T14:48:00Z" description="login system with valid username and password" finished-at="2021-01-24T14:48:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.orange.tests.LoginPageTest@fd8294b]" name="tearDown" is-config="true" duration-ms="0" started-at="2021-01-24T14:48:00Z" finished-at="2021-01-24T14:48:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.orange.tests.LoginPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

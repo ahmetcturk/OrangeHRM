@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Orange Regression Test Suite">
+
+<listeners>
+	
+	
+	<listener class-name="com.qa.orange.listeners.ScreenshotListener" />
+	<!-- <listener class-name="com.qa.orange.listeners.TestAllureListener" /> -->
+    <!-- <listener class-name="com.qa.orange.listeners.ExtentReportListener" /> -->
+
+	</listeners>
+  <parameter name="browser" value="chrome"/>
+  <test name="Orange Functional Regression Test">
+  
+   <!-- <groups>
+   <run>
+      <include name="sanity"/>
+   </run>
+   </groups> -->
+   
+    <classes>
+      <class name="com.qa.orange.tests.LoginPageTest"/>
+     <!--  <class name="com.qa.orange.tests.HomePageTest"/>
+      <class name="com.qa.orange.tests.ContactsPageTest"/> -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
