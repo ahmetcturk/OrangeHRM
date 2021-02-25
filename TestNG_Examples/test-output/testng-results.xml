@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="7780" started-at="2021-02-17T02:24:28Z" finished-at="2021-02-17T02:24:35Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="7780" started-at="2021-02-17T02:24:28Z" finished-at="2021-02-17T02:24:35Z">
+      <class name="package_1.LoginPage">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:package_1.LoginPage@3abbfa04]" name="setUp" is-config="true" duration-ms="2534" started-at="2021-02-17T02:24:28Z" finished-at="2021-02-17T02:24:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="login()[pri:0, instance:package_1.LoginPage@3abbfa04]" name="login" duration-ms="1390" started-at="2021-02-17T02:24:30Z" finished-at="2021-02-17T02:24:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="terminateBrowser()[pri:0, instance:package_1.LoginPage@3abbfa04]" name="terminateBrowser" is-config="true" duration-ms="76" started-at="2021-02-17T02:24:32Z" finished-at="2021-02-17T02:24:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateBrowser -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:package_1.LoginPage@3abbfa04]" name="setUp" is-config="true" duration-ms="1867" started-at="2021-02-17T02:24:32Z" finished-at="2021-02-17T02:24:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyForgetPswLink()[pri:0, instance:package_1.LoginPage@3abbfa04]" name="verifyForgetPswLink" duration-ms="23" started-at="2021-02-17T02:24:34Z" finished-at="2021-02-17T02:24:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyForgetPswLink -->
+        <test-method status="PASS" signature="terminateBrowser()[pri:0, instance:package_1.LoginPage@3abbfa04]" name="terminateBrowser" is-config="true" duration-ms="67" started-at="2021-02-17T02:24:34Z" finished-at="2021-02-17T02:24:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateBrowser -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:package_1.LoginPage@3abbfa04]" name="setUp" is-config="true" duration-ms="1726" started-at="2021-02-17T02:24:34Z" finished-at="2021-02-17T02:24:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyLoginPageTitle()[pri:0, instance:package_1.LoginPage@3abbfa04]" name="verifyLoginPageTitle" duration-ms="4" started-at="2021-02-17T02:24:35Z" finished-at="2021-02-17T02:24:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginPageTitle -->
+        <test-method status="PASS" signature="terminateBrowser()[pri:0, instance:package_1.LoginPage@3abbfa04]" name="terminateBrowser" is-config="true" duration-ms="69" started-at="2021-02-17T02:24:35Z" finished-at="2021-02-17T02:24:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateBrowser -->
+      </class> <!-- package_1.LoginPage -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
