@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Test Suite]">
+  <listeners>
+    <listener class-name="com.qa.orangehrm.listeners.ScreenshotListener"/>
+  </listeners>
+  <test thread-count="5" name="Orange Test(failed)">
     <classes>
-      <class name="com.qa.orangehrm.tests.AddEmployeeTest">
+      <class name="com.qa.orangehrm.tests.HomePageTest">
         <methods>
-          <include name="tearDown"/>
-          <include name="addEmployeeTest"/>
           <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifyHomePageHeader"/>
+          <include name="verifyLoggedInUserTest"/>
+          <include name="verifyAuthentication"/>
         </methods>
-      </class> <!-- com.qa.orangehrm.tests.AddEmployeeTest -->
+      </class> <!-- com.qa.orangehrm.tests.HomePageTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Orange Test(failed) -->
+</suite> <!-- Failed suite [Test Suite] -->

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="TestNG_1.TestNG_1.FirstTest">
+        <methods>
+          <include name="terminateBrowser2"/>
+          <include name="launchBrowser2"/>
+          <include name="terminateBrowser1"/>
+          <include name="terminateBrowser3"/>
+          <include name="t3VerifyLoggedInPage"/>
+          <include name="launchBrowser"/>
+          <include name="terminateBrowser"/>
+        </methods>
+      </class> <!-- TestNG_1.TestNG_1.FirstTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

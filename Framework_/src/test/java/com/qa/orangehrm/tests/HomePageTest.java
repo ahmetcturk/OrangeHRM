@@ -12,6 +12,7 @@ import com.qa.orangehrm.base.BasePage;
 import com.qa.orangehrm.pages.HomePage;
 import com.qa.orangehrm.pages.LoginPage;
 import com.qa.orangehrm.util.Constants;
+import com.qa.orangehrm.util.Credentials;
 
 public class HomePageTest {
 	WebDriver driver;
@@ -19,14 +20,20 @@ public class HomePageTest {
 	Properties properties;
 	LoginPage loginPage;
 	HomePage homePage;
-
+	
 	@BeforeMethod
-	public void setUp() throws InterruptedException {
+	public void setUp(){
+		System.out.println(1);
 		basePage = new BasePage();
+		System.out.println(2);
 		properties = basePage.initialize_properties();
+		System.out.println(3);
 		driver = basePage.initialize_driver();
+		System.out.println(4);
 		loginPage = new LoginPage(driver);
+		System.out.println(5);
 		homePage = loginPage.doLogin(properties.getProperty("username"), properties.getProperty("password"));
+		System.out.println(6);
 	}
 
 	@Test(priority=1, description="verify home page title")
@@ -42,7 +49,7 @@ public class HomePageTest {
 	public void verifyHomePageHeader() {
 		String header = homePage.getHomePageHeader();
 		System.out.println("home page header is "+ header);
-		Assert.assertEquals(header, Constants.HOME_PAGE_HEADER);
+		Assert.assertEquals(header, Constants.HOME_PAGE_HEADER.concat("!"));
 	}
 	
 	@Test(priority=3, description="verify account name method")

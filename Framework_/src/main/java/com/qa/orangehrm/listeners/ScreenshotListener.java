@@ -1,5 +1,22 @@
 package com.qa.orangehrm.listeners;
 
+
+import java.io.File;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.testng.ITestResult;
+import org.testng.Reporter;
+import org.testng.TestListenerAdapter;
+
+import com.qa.orangehrm.base.BasePage;
+
+
+
 public class ScreenshotListener extends TestListenerAdapter {
     @Override
     public void onTestFailure(ITestResult result) {

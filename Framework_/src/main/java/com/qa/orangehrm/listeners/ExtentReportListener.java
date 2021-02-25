@@ -16,8 +16,9 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
+import com.qa.orangehrm.base.BasePage;
 
-public class ExtentReportListener implements ITestListener {
+public class ExtentReportListener extends BasePage implements ITestListener {
 
 	private static final String OUTPUT_FOLDER = "./build/";
 	private static final String FILE_NAME = "TestExecutionReport.html";

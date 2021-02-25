@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test Orange(failed)">
+    <groups>
+      <run>
+        <include name="G1"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="TestNG_1.TestNG_1.FirstTest">
+        <methods>
+          <include name="t1VerifyLoggedInPage"/>
+          <include name="launchBrowser"/>
+          <include name="terminateBrowser"/>
+        </methods>
+      </class> <!-- TestNG_1.TestNG_1.FirstTest -->
+    </classes>
+  </test> <!-- Test Orange(failed) -->
+</suite> <!-- Failed suite [Suite] -->
