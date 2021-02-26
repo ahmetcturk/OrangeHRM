@@ -1,12 +1,16 @@
 package com.qa.orangehrm.pages;
 
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+
 import com.qa.orangehrm.base.BasePage;
+
 
 public class LoginPage extends BasePage{
 	// fields : driver,locators
+	
 	WebDriver driver;
 	By username = By.id("txtUsername");
 	By password = By.id("txtPassword");

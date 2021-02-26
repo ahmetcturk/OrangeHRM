@@ -15,7 +15,7 @@ public class BasePage {
 	// Fields, driver,
 	//WebDriver driver;
 	Properties properties;
-
+	public OptionsManager optionsManager;
 	public static ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();
 
 	public static synchronized WebDriver getDriver() {
@@ -28,15 +28,16 @@ public class BasePage {
 		properties = initialize_properties();
 
 		String browser = properties.getProperty("browserID");
+		optionsManager = new OptionsManager(properties);
 		if (browser.equals("chrome")) {
 
 			WebDriverManager.chromedriver().setup();
 			//driver = new ChromeDriver();
-			driver.set(new ChromeDriver());
+			driver.set(new ChromeDriver(optionsManager.getChromeOptions()));
 		} else if (browser.equals("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
 			//driver = new FirefoxDriver();
-			driver.set(new FirefoxDriver());
+			driver.set(new FirefoxDriver(optionsManager.getFirefoxOptions()));
 		} else {
 			System.out.println("Undefined Browser");
 		}

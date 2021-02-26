@@ -3,7 +3,7 @@
 <suite guice-stage="DEVELOPMENT" name="Test Suite">
   <listeners>
   
-    <listener class-name="com.qa.orangehrm.listeners.ScreenshotListener" />
+    <listener class-name="com.qa.orangehrm.listeners.ExtentReportListener" />
    
   </listeners>
   

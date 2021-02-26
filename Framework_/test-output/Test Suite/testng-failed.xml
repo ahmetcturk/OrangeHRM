@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Test Suite]">
   <listeners>
-    <listener class-name="com.qa.orangehrm.listeners.ScreenshotListener"/>
+    <listener class-name="com.qa.orangehrm.listeners.ExtentReportListener"/>
   </listeners>
   <test thread-count="5" name="Orange Test(failed)">
     <classes>
