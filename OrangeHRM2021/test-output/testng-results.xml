@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="8220" started-at="2021-02-26T02:46:58Z" finished-at="2021-02-26T02:47:06Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="8220" started-at="2021-02-26T02:46:58Z" finished-at="2021-02-26T02:47:06Z">
+      <class name="orange.qa.hrm.tests.HomePageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:orange.qa.hrm.tests.HomePageTest@4690b489]" name="setup" is-config="true" duration-ms="2769" started-at="2021-02-26T02:46:58Z" finished-at="2021-02-26T02:47:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyAccountName()[pri:0, instance:orange.qa.hrm.tests.HomePageTest@4690b489]" name="verifyAccountName" duration-ms="220" started-at="2021-02-26T02:47:01Z" finished-at="2021-02-26T02:47:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAccountName -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:orange.qa.hrm.tests.HomePageTest@4690b489]" name="tearDown" is-config="true" duration-ms="74" started-at="2021-02-26T02:47:01Z" finished-at="2021-02-26T02:47:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:orange.qa.hrm.tests.HomePageTest@4690b489]" name="setup" is-config="true" duration-ms="2268" started-at="2021-02-26T02:47:01Z" finished-at="2021-02-26T02:47:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyHeader()[pri:0, instance:orange.qa.hrm.tests.HomePageTest@4690b489]" name="verifyHeader" duration-ms="17" started-at="2021-02-26T02:47:03Z" finished-at="2021-02-26T02:47:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHeader -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:orange.qa.hrm.tests.HomePageTest@4690b489]" name="tearDown" is-config="true" duration-ms="79" started-at="2021-02-26T02:47:03Z" finished-at="2021-02-26T02:47:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:orange.qa.hrm.tests.HomePageTest@4690b489]" name="setup" is-config="true" duration-ms="2394" started-at="2021-02-26T02:47:03Z" finished-at="2021-02-26T02:47:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyHomePageTitle()[pri:0, instance:orange.qa.hrm.tests.HomePageTest@4690b489]" name="verifyHomePageTitle" duration-ms="240" started-at="2021-02-26T02:47:06Z" finished-at="2021-02-26T02:47:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageTitle -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:orange.qa.hrm.tests.HomePageTest@4690b489]" name="tearDown" is-config="true" duration-ms="77" started-at="2021-02-26T02:47:06Z" finished-at="2021-02-26T02:47:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- orange.qa.hrm.tests.HomePageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
