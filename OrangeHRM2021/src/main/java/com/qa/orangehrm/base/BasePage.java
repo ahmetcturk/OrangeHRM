@@ -28,6 +28,7 @@ public class BasePage {
 	// initialize driver
 	
 	public WebDriver initialize_driver(){
+		
 		properties = initialize_properties();
 		optionsManager = new OptionsManager(properties);
 		String browser = properties.getProperty("browser");
@@ -56,12 +57,10 @@ public class BasePage {
 	public Properties initialize_properties(){
 		properties = new Properties();
 		try {
-			FileInputStream inputStream = new FileInputStream("/Users/ahmetcturk/Documents/workspace/OrangeHRM2021/"
-					+ "src/main/java/com/qa/orangehrm"
-					+ "/config/config.properties");
+			FileInputStream inputStream = new FileInputStream("/Users/ahmetcturk/git/OrangeHRM/OrangeHRM2021/src/main/java/com/qa/orangehrm/config/config.properties");
 			properties.load(inputStream);
 		} catch (IOException e) {
-			
+			System.out.println("Problem on config");
 		}
 		return properties;
 	}

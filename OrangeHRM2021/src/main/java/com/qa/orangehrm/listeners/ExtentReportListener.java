@@ -13,6 +13,7 @@ import org.testng.ITestResult;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
@@ -90,14 +91,15 @@ public class ExtentReportListener extends BasePage implements ITestListener {
 
 	public synchronized void onTestFailure(ITestResult result) {
 		System.out.println((result.getMethod().getMethodName() + " failed!"));
-//		try {
-//			test.get().fail(result.getThrowable(),
-//					MediaEntityBuilder.createScreenCaptureFromPath(getScreenshot()).build());
-//		} catch (IOException e) {
-//			System.err
-//					.println("Exception thrown while updating test fail status " + Arrays.toString(e.getStackTrace()));
-//		}
-//		test.get().getModel().setEndTime(getTime(result.getEndMillis()));
+		try {
+			test.get().fail(result.getThrowable(),
+					MediaEntityBuilder.createScreenCaptureFromPath("/Users/ahmetcturk/git/OrangeHRM/OrangeHRM2021/build").build());
+		
+		} catch (IOException e) {
+			System.err
+					.println("Exception thrown while updating test fail status ");
+		}
+		test.get().getModel().setEndTime(getTime(result.getEndMillis()));
 	}
 
 	public synchronized void onTestSkipped(ITestResult result) {

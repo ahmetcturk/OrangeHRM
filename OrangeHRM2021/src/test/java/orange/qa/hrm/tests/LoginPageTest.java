@@ -8,12 +8,14 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.qa.orangehrm.base.BasePage;
 import com.qa.orangehrm.pages.LoginPage;
 import com.qa.orangehrm.util.Constants;
 import com.qa.orangehrm.util.Credentials;
+@Listeners(com.qa.orangehrm.listeners.ExtentReportListener.class)
 
 public class LoginPageTest {
 	
@@ -38,7 +40,7 @@ public class LoginPageTest {
 	public void verifyTitle(){
 		
 		String actualTitle = loginPage.getPageTitle();
-		Assert.assertEquals(actualTitle, Constants.LOGIN_PAGE_TITLE);
+		Assert.assertEquals(actualTitle, Constants.LOGIN_PAGE_TITLE.concat(" d"));
 	}
 	
 	@Test(priority = 2, description = "Verify login with correct credentials")
