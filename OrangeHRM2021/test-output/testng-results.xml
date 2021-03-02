@@ -1,21 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3541" started-at="2021-03-02T19:47:02Z" finished-at="2021-03-02T19:47:06Z">
+  <suite name="Default suite" duration-ms="8708" started-at="2021-03-02T22:56:39Z" finished-at="2021-03-02T22:56:47Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3541" started-at="2021-03-02T19:47:02Z" finished-at="2021-03-02T19:47:06Z">
+    <test name="Default test" duration-ms="8708" started-at="2021-03-02T22:56:39Z" finished-at="2021-03-02T22:56:47Z">
       <class name="orange.qa.hrm.tests.LoginPageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:orange.qa.hrm.tests.LoginPageTest@2805c96b]" name="setup" is-config="true" duration-ms="2177" started-at="2021-03-02T19:47:02Z" finished-at="2021-03-02T19:47:04Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:orange.qa.hrm.tests.LoginPageTest@7f1302d6]" name="setup" is-config="true" duration-ms="2163" started-at="2021-03-02T22:56:39Z" finished-at="2021-03-02T22:56:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="loginTest()[pri:2, instance:orange.qa.hrm.tests.LoginPageTest@2805c96b]" name="loginTest" duration-ms="1196" started-at="2021-03-02T19:47:04Z" description="Verify login with correct credentials" finished-at="2021-03-02T19:47:06Z">
+        <test-method status="PASS" signature="verifyTitle()[pri:1, instance:orange.qa.hrm.tests.LoginPageTest@7f1302d6]" name="verifyTitle" duration-ms="49" started-at="2021-03-02T22:56:41Z" description="Check login page title" finished-at="2021-03-02T22:56:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitle -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:orange.qa.hrm.tests.LoginPageTest@7f1302d6]" name="tearDown" is-config="true" duration-ms="72" started-at="2021-03-02T22:56:41Z" finished-at="2021-03-02T22:56:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:orange.qa.hrm.tests.LoginPageTest@7f1302d6]" name="setup" is-config="true" duration-ms="1711" started-at="2021-03-02T22:56:41Z" finished-at="2021-03-02T22:56:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="loginTest()[pri:2, instance:orange.qa.hrm.tests.LoginPageTest@7f1302d6]" name="loginTest" duration-ms="1531" started-at="2021-03-02T22:56:43Z" description="Verify login with correct credentials" finished-at="2021-03-02T22:56:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:orange.qa.hrm.tests.LoginPageTest@2805c96b]" name="tearDown" is-config="true" duration-ms="76" started-at="2021-03-02T19:47:06Z" finished-at="2021-03-02T19:47:06Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:orange.qa.hrm.tests.LoginPageTest@7f1302d6]" name="tearDown" is-config="true" duration-ms="69" started-at="2021-03-02T22:56:44Z" finished-at="2021-03-02T22:56:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:orange.qa.hrm.tests.LoginPageTest@7f1302d6]" name="setup" is-config="true" duration-ms="1757" started-at="2021-03-02T22:56:44Z" finished-at="2021-03-02T22:56:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="loginTest2()[pri:3, instance:orange.qa.hrm.tests.LoginPageTest@7f1302d6]" name="loginTest2" duration-ms="1204" started-at="2021-03-02T22:56:46Z" description="Verify login with incorrect credentials" finished-at="2021-03-02T22:56:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest2 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:orange.qa.hrm.tests.LoginPageTest@7f1302d6]" name="tearDown" is-config="true" duration-ms="68" started-at="2021-03-02T22:56:47Z" finished-at="2021-03-02T22:56:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

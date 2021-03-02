@@ -2,6 +2,7 @@ package orange.qa.hrm.tests;
 
 import java.util.Properties;
 
+import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
@@ -16,7 +17,7 @@ import com.qa.orangehrm.pages.LoginPage;
 
 @Listeners(com.qa.orangehrm.listeners.ExtentReportListener.class)
 public class HomePageTest {
-	Logger logger = Logger.getLogger("HomePageTest");
+	Logger logger = Logger.getLogger(HomePageTest.class);
 	WebDriver driver;
 	BasePage basePage;
 	Properties properties;
@@ -38,6 +39,7 @@ public class HomePageTest {
 	
 	@Test
 	public void verifyHomePageTitle(){
+		BasicConfigurator.configure();  
 		logger.info("Verifying home page title starting...");
 		String actualTitle = homePage.getHomePageTitle();
 		Assert.assertEquals(actualTitle, "OrangeHRM");
@@ -46,7 +48,9 @@ public class HomePageTest {
 	
 	@Test
 	public void verifyHeader(){
+		logger.info("Verifying home page header starting...");
 		Assert.assertEquals(homePage.getPageHeader(), "Dashboard");
+		logger.info("Verifying home page header ending...");
 	}
 	
 	@Test

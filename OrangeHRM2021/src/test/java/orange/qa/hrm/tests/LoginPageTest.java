@@ -15,7 +15,8 @@ import com.qa.orangehrm.base.BasePage;
 import com.qa.orangehrm.pages.LoginPage;
 import com.qa.orangehrm.util.Constants;
 import com.qa.orangehrm.util.Credentials;
-@Listeners(com.qa.orangehrm.listeners.ExtentReportListener.class)
+
+@Listeners(com.qa.orangehrm.listeners.Listener1.class)
 
 public class LoginPageTest {
 	
@@ -40,7 +41,7 @@ public class LoginPageTest {
 	public void verifyTitle(){
 		
 		String actualTitle = loginPage.getPageTitle();
-		Assert.assertEquals(actualTitle, Constants.LOGIN_PAGE_TITLE.concat(" d"));
+		Assert.assertEquals(actualTitle, Constants.LOGIN_PAGE_TITLE);
 	}
 	
 	@Test(priority = 2, description = "Verify login with correct credentials")
@@ -51,8 +52,8 @@ public class LoginPageTest {
 	
 	@Test(priority = 3, description = "Verify login with incorrect credentials")
 	public void loginTest2(){
-		loginPage.doLogin(properties.getProperty("incorrectusername"),
-				properties.getProperty("incorrectpassword"));
+		loginPage.doLogin(cred.getUsername(),
+				cred.getPassword());
 	}
 	
 	@AfterMethod
