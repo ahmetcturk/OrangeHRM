@@ -12,7 +12,7 @@ import com.qa.orangehrm.page.LoginPage;
 import com.qa.orangehrm.util.Credentials;
 import com.sun.swing.internal.plaf.metal.resources.metal_zh_TW;
 
-public class LoginPageTest extends BasePage{
+public class LoginPageTest {
 
 	// Fields : Webdriver, BasePage, Properties, LoginPage
 	

@@ -16,9 +16,9 @@ import com.qa.orangehrm.pages.LoginPage;
 import com.qa.orangehrm.util.Constants;
 import com.qa.orangehrm.util.Credentials;
 
-@Listeners(com.qa.orangehrm.listeners.Listener1.class)
+@Listeners({com.qa.orangehrm.listeners.ExtentReportListener.class})
 
-public class LoginPageTest {
+public class LoginPageTest extends BasePage{
 	
 	// fields, driver, properties, basepageObj, LoginpageObj, 
 	WebDriver driver;
@@ -41,7 +41,7 @@ public class LoginPageTest {
 	public void verifyTitle(){
 		
 		String actualTitle = loginPage.getPageTitle();
-		Assert.assertEquals(actualTitle, Constants.LOGIN_PAGE_TITLE);
+		Assert.assertEquals(actualTitle, Constants.LOGIN_PAGE_TITLE.concat("!"));
 	}
 	
 	@Test(priority = 2, description = "Verify login with correct credentials")

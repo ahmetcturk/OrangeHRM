@@ -3,7 +3,9 @@ package com.qa.orangehrm.page;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class LoginPage {
+import com.qa.orangehrm.base.BasePage;
+
+public class LoginPage extends BasePage {
 	// Fields, Webdriver, properties, locators
 	WebDriver driver;
 	By usernameInput = By.id("txtUsername");

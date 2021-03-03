@@ -1,45 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8708" started-at="2021-03-02T22:56:39Z" finished-at="2021-03-02T22:56:47Z">
+  <suite name="Default suite" duration-ms="7965" started-at="2021-03-03T02:23:37Z" finished-at="2021-03-03T02:23:44Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="8708" started-at="2021-03-02T22:56:39Z" finished-at="2021-03-02T22:56:47Z">
+    <test name="Default test" duration-ms="7965" started-at="2021-03-03T02:23:37Z" finished-at="2021-03-03T02:23:44Z">
       <class name="orange.qa.hrm.tests.LoginPageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:orange.qa.hrm.tests.LoginPageTest@7f1302d6]" name="setup" is-config="true" duration-ms="2163" started-at="2021-03-02T22:56:39Z" finished-at="2021-03-02T22:56:41Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:orange.qa.hrm.tests.LoginPageTest@5db250b4]" name="setup" is-config="true" duration-ms="2133" started-at="2021-03-03T02:23:37Z" finished-at="2021-03-03T02:23:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verifyTitle()[pri:1, instance:orange.qa.hrm.tests.LoginPageTest@7f1302d6]" name="verifyTitle" duration-ms="49" started-at="2021-03-02T22:56:41Z" description="Check login page title" finished-at="2021-03-02T22:56:41Z">
+        <test-method status="FAIL" signature="verifyTitle()[pri:1, instance:orange.qa.hrm.tests.LoginPageTest@5db250b4]" name="verifyTitle" duration-ms="53" started-at="2021-03-03T02:23:39Z" description="Check login page title" finished-at="2021-03-03T02:23:39Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [OrangeHRM!] but found [OrangeHRM]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [OrangeHRM!] but found [OrangeHRM]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at orange.qa.hrm.tests.LoginPageTest.verifyTitle(LoginPageTest.java:44)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTitle -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:orange.qa.hrm.tests.LoginPageTest@7f1302d6]" name="tearDown" is-config="true" duration-ms="72" started-at="2021-03-02T22:56:41Z" finished-at="2021-03-02T22:56:41Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:orange.qa.hrm.tests.LoginPageTest@5db250b4]" name="tearDown" is-config="true" duration-ms="73" started-at="2021-03-03T02:23:39Z" finished-at="2021-03-03T02:23:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:orange.qa.hrm.tests.LoginPageTest@7f1302d6]" name="setup" is-config="true" duration-ms="1711" started-at="2021-03-02T22:56:41Z" finished-at="2021-03-02T22:56:43Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:orange.qa.hrm.tests.LoginPageTest@5db250b4]" name="setup" is-config="true" duration-ms="1520" started-at="2021-03-03T02:23:39Z" finished-at="2021-03-03T02:23:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="loginTest()[pri:2, instance:orange.qa.hrm.tests.LoginPageTest@7f1302d6]" name="loginTest" duration-ms="1531" started-at="2021-03-02T22:56:43Z" description="Verify login with correct credentials" finished-at="2021-03-02T22:56:44Z">
+        <test-method status="PASS" signature="loginTest()[pri:2, instance:orange.qa.hrm.tests.LoginPageTest@5db250b4]" name="loginTest" duration-ms="1064" started-at="2021-03-03T02:23:40Z" description="Verify login with correct credentials" finished-at="2021-03-03T02:23:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:orange.qa.hrm.tests.LoginPageTest@7f1302d6]" name="tearDown" is-config="true" duration-ms="69" started-at="2021-03-02T22:56:44Z" finished-at="2021-03-02T22:56:44Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:orange.qa.hrm.tests.LoginPageTest@5db250b4]" name="tearDown" is-config="true" duration-ms="316" started-at="2021-03-03T02:23:41Z" finished-at="2021-03-03T02:23:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:orange.qa.hrm.tests.LoginPageTest@7f1302d6]" name="setup" is-config="true" duration-ms="1757" started-at="2021-03-02T22:56:44Z" finished-at="2021-03-02T22:56:46Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:orange.qa.hrm.tests.LoginPageTest@5db250b4]" name="setup" is-config="true" duration-ms="1512" started-at="2021-03-03T02:23:42Z" finished-at="2021-03-03T02:23:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="loginTest2()[pri:3, instance:orange.qa.hrm.tests.LoginPageTest@7f1302d6]" name="loginTest2" duration-ms="1204" started-at="2021-03-02T22:56:46Z" description="Verify login with incorrect credentials" finished-at="2021-03-02T22:56:47Z">
+        <test-method status="PASS" signature="loginTest2()[pri:3, instance:orange.qa.hrm.tests.LoginPageTest@5db250b4]" name="loginTest2" duration-ms="1118" started-at="2021-03-03T02:23:43Z" description="Verify login with incorrect credentials" finished-at="2021-03-03T02:23:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest2 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:orange.qa.hrm.tests.LoginPageTest@7f1302d6]" name="tearDown" is-config="true" duration-ms="68" started-at="2021-03-02T22:56:47Z" finished-at="2021-03-02T22:56:47Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:orange.qa.hrm.tests.LoginPageTest@5db250b4]" name="tearDown" is-config="true" duration-ms="71" started-at="2021-03-03T02:23:44Z" finished-at="2021-03-03T02:23:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
