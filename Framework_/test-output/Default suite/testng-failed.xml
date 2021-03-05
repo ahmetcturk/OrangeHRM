@@ -3,13 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.orangehrm.tests.LoginPageTestPF">
+      <class name="com.qa.orangehrm.test_api.Test_Get">
         <methods>
-          <include name="tearDown"/>
-          <include name="loginTest"/>
-          <include name="setUp"/>
+          <include name="method"/>
         </methods>
-      </class> <!-- com.qa.orangehrm.tests.LoginPageTestPF -->
+      </class> <!-- com.qa.orangehrm.test_api.Test_Get -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

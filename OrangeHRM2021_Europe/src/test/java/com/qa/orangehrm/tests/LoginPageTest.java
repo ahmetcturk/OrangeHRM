@@ -2,7 +2,9 @@ package com.qa.orangehrm.tests;
 
 import java.util.Properties;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -36,10 +38,28 @@ public class LoginPageTest {
 				properties.getProperty("password"));
 	}
 	
-	@Test
-	public void loginTest() throws InterruptedException{
-		loginPage.doLoginWCorrectCred(cred.getUsername(),
+	@Test(description = "This method checks if i can login to website with "
+			+ "correct credentials")
+	public void loginTest(){
+		loginPage.doLogin(cred.getUsername(),
 				cred.getPassword());
+		// Test Case : After put credentials, we need to be in HomePage
+		// And URL Should be :https://opensource-demo.orangehrmlive.com/index.php/dashboard
+		String homePageURL = "https://opensource-demo.orangehrmlive.com/index.php/dashboard";
+		String actualURL = driver.getCurrentUrl();
+		System.out.println(actualURL);
+		Assert.assertEquals(homePageURL, actualURL);
+	}
+	
+	@Test(description = "This method checks if i can login to website with "
+			+ "incorrect credentials")
+	public void loginTest2(){
+		loginPage.doLogin(properties.getProperty("incorrectUsername"),
+				properties.getProperty("incorrectPassword"));
+		
+		// Test Case : After put wrong credentials, we need to be in LoginPage
+		// And forgot password link message should be displayed
+		Assert.assertTrue(driver.findElement(By.xpath("//*[@id='forgotPasswordLink']")).isDisplayed());
 		
 	}
 	

@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 
 import com.qa.orangehrm.base.BasePage;
 
-public class LoginPage extends BasePage {
+public class LoginPage {
 	// Fields, Webdriver, properties, locators
 	WebDriver driver;
 	By usernameInput = By.id("txtUsername");
@@ -30,10 +30,11 @@ public class LoginPage extends BasePage {
 	 * .......
 	 */
 	
-	public void doLoginWCorrectCred(String username, String password){
+	public HomePage doLogin(String username, String password){
 		driver.findElement(usernameInput).sendKeys(username);
 		driver.findElement(passwordInput).sendKeys(password);
 		driver.findElement(loginButton).click();
+		return new HomePage(driver);
 		
 	}
 	

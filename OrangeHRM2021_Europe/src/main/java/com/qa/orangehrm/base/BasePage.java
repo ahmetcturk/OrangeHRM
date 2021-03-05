@@ -36,11 +36,12 @@ public class BasePage {
 		else {
 			System.out.println("Driver not found");
 		}
-		driver.get(baseURL);
+		
 		// Driver options here
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
 		driver.manage().deleteAllCookies();
+		driver.get(baseURL);
 		return driver;
 	}
 	
@@ -49,9 +50,9 @@ public class BasePage {
 	public Properties initialize_properties(){
 		properties = new Properties();
 		try {
-			FileInputStream inputStream = new FileInputStream("/Users/ahmetcturk/Documents/workspace"
-					+ "/OrangeHRM2021_Europe/src/main/java/com/qa/"
-					+ "orangehrm/config/config.properties");
+			FileInputStream inputStream = new FileInputStream("/Users/ahmetcturk/git/OrangeHRM/OrangeHRM2021_Europe"
+					+ "/src/main/java/com/qa/orangehrm/config"
+					+ "/config.properties");
 			properties.load(inputStream);
 		} catch (FileNotFoundException e) {
 			System.out.println("File Not Found");
