@@ -3,17 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestNG_1.TestNG_1.FirstTest">
+      <class name="TestNG_1.TestNG_1.Class2">
         <methods>
-          <include name="terminateBrowser2"/>
-          <include name="launchBrowser2"/>
-          <include name="terminateBrowser1"/>
-          <include name="terminateBrowser3"/>
-          <include name="t3VerifyLoggedInPage"/>
-          <include name="launchBrowser"/>
-          <include name="terminateBrowser"/>
+          <include name="test1"/>
         </methods>
-      </class> <!-- TestNG_1.TestNG_1.FirstTest -->
+      </class> <!-- TestNG_1.TestNG_1.Class2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

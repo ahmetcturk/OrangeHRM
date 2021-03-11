@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Parallel Suite]" parallel="tests">
+  <test thread-count="2" name="Parallel Test(failed)" parallel="classes">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.qa.orangehrm.tests.LoginPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="loginTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.qa.orangehrm.tests.LoginPageTest -->
+    </classes>
+  </test> <!-- Parallel Test(failed) -->
+  <test thread-count="2" name="Parallel Test 2(failed)" parallel="classes">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.qa.orangehrm.tests.LoginPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="loginTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.qa.orangehrm.tests.LoginPageTest -->
+    </classes>
+  </test> <!-- Parallel Test 2(failed) -->
+</suite> <!-- Failed suite [Parallel Suite] -->

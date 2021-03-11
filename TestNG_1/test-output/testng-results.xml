@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="23" started-at="2021-03-11T18:00:34Z" finished-at="2021-03-11T18:00:34Z">
+  <suite name="Suite 1" duration-ms="28" started-at="2021-03-11T19:24:17Z" finished-at="2021-03-11T19:24:17Z">
     <groups>
     </groups>
-    <test name="Test Orange" duration-ms="23" started-at="2021-03-11T18:00:34Z" finished-at="2021-03-11T18:00:34Z">
-      <class name="TestNG_1.TestNG_1.Class1">
-        <test-method status="PASS" signature="test1(java.lang.String)[pri:0, instance:TestNG_1.TestNG_1.Class1@3e6fa38a]" name="test1" duration-ms="7" started-at="2021-03-11T18:00:34Z" finished-at="2021-03-11T18:00:34Z">
+    <test name="Suite 1 Test" duration-ms="28" started-at="2021-03-11T19:24:17Z" finished-at="2021-03-11T19:24:17Z">
+      <class name="TestNG_1.TestNG_1.Class2">
+        <test-method status="PASS" signature="test1(java.lang.String)[pri:0, instance:TestNG_1.TestNG_1.Class2@5ef60048]" name="test1" duration-ms="8" started-at="2021-03-11T19:24:17Z" finished-at="2021-03-11T19:24:17Z">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-      </class> <!-- TestNG_1.TestNG_1.Class1 -->
-    </test> <!-- Test Orange -->
-  </suite> <!-- Suite -->
+      </class> <!-- TestNG_1.TestNG_1.Class2 -->
+    </test> <!-- Suite 1 Test -->
+  </suite> <!-- Suite 1 -->
 </testng-results>
