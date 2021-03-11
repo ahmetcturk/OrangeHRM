@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.qa.orangehrm.base.BasePage;
@@ -22,18 +23,15 @@ public class HomePageTest {
 	HomePage homePage;
 	
 	@BeforeMethod
-	public void setUp(){
-		System.out.println(1);
+	@Parameters(value = {"browser"})
+	public void setUp(String browser){
+		String browserName = null;
 		basePage = new BasePage();
-		System.out.println(2);
 		properties = basePage.initialize_properties();
-		System.out.println(3);
-		driver = basePage.initialize_driver();
-		System.out.println(4);
+		browserName = browser;
+		driver = basePage.initialize_driver(browserName);
 		loginPage = new LoginPage(driver);
-		System.out.println(5);
 		homePage = loginPage.doLogin(properties.getProperty("username"), properties.getProperty("password"));
-		System.out.println(6);
 	}
 
 	@Test(priority=1, description="verify home page title")
@@ -49,7 +47,7 @@ public class HomePageTest {
 	public void verifyHomePageHeader() {
 		String header = homePage.getHomePageHeader();
 		System.out.println("home page header is "+ header);
-		Assert.assertEquals(header, Constants.HOME_PAGE_HEADER.concat("!"));
+		Assert.assertEquals(header, Constants.HOME_PAGE_HEADER);
 	}
 	
 	@Test(priority=3, description="verify account name method")

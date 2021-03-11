@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,12 +49,12 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>testng-customsuite.xml</span>
+                    <span>ParallelExecution.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,36 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">8 methods, 4 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.qa.orangehrm.tests.HomePageTest" hash-for-method="verifyAuthentication">verifyAuthentication</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.qa.orangehrm.tests.HomePageTest" hash-for-method="verifyHomePageHeader">verifyHomePageHeader</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.qa.orangehrm.tests.HomePageTest" hash-for-method="verifyLoggedInUserTest">verifyLoggedInUserTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.qa.orangehrm.tests.HomePageTest" hash-for-method="verifyLoggedInUserTest">verifyLoggedInUserTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,27 +131,22 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.qa.orangehrm.tests.LoginPageTest" hash-for-method="getTitle">getTitle</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.qa.orangehrm.tests.HomePageTest" hash-for-method="verifyAuthentication">verifyAuthentication</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.qa.orangehrm.tests.LoginPageTest" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.qa.orangehrm.tests.HomePageTest" hash-for-method="verifyHomePageHeader">verifyHomePageHeader</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.qa.orangehrm.tests.LoginPageTest" hash-for-method="loginTest1">loginTest1</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.qa.orangehrm.tests.HomePageTest" hash-for-method="verifyHomePageTitle">verifyHomePageTitle</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.qa.orangehrm.tests.LoginPageTest" hash-for-method="loginTest2">loginTest2</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.qa.orangehrm.tests.LoginPageTest" hash-for-method="loginTest3">loginTest3</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.qa.orangehrm.tests.HomePageTest" hash-for-method="verifyHomePageTitle">verifyHomePageTitle</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -137,45 +161,118 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.qa.orangehrm.tests.LoginPageTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.qa.orangehrm.tests.HomePageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="getTitle">
-                  </a> <!-- getTitle -->
-                  <span class="method-name">getTitle</span>
+                  <a name="verifyAuthentication">
+                  </a> <!-- verifyAuthentication -->
+                  <span class="method-name">verifyAuthentication</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.qa.orangehrm.tests.HomePageTest.verifyAuthentication(HomePageTest.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(verify page URL)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="loginTest">
-                  </a> <!-- loginTest -->
-                  <span class="method-name">loginTest</span>
+                  <a name="verifyHomePageHeader">
+                  </a> <!-- verifyHomePageHeader -->
+                  <span class="method-name">verifyHomePageHeader</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Dashboard] but found [null]
+	at com.qa.orangehrm.tests.HomePageTest.verifyHomePageHeader(HomePageTest.java:50)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(verify home page header)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="loginTest1">
-                  </a> <!-- loginTest1 -->
-                  <span class="method-name">loginTest1</span>
+                  <a name="verifyLoggedInUserTest">
+                  </a> <!-- verifyLoggedInUserTest -->
+                  <span class="method-name">verifyLoggedInUserTest</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.qa.orangehrm.tests.HomePageTest.verifyLoggedInUserTest(HomePageTest.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(verify account name method)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="loginTest2">
-                  </a> <!-- loginTest2 -->
-                  <span class="method-name">loginTest2</span>
+                  <a name="verifyLoggedInUserTest">
+                  </a> <!-- verifyLoggedInUserTest -->
+                  <span class="method-name">verifyLoggedInUserTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.qa.orangehrm.tests.HomePageTest.verifyLoggedInUserTest(HomePageTest.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(verify account name method)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.orangehrm.tests.HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAuthentication">
+                  </a> <!-- verifyAuthentication -->
+                  <span class="method-name">verifyAuthentication</span>
+                  <em>
+(verify page URL)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="loginTest3">
-                  </a> <!-- loginTest3 -->
-                  <span class="method-name">loginTest3</span>
+                  <a name="verifyHomePageHeader">
+                  </a> <!-- verifyHomePageHeader -->
+                  <span class="method-name">verifyHomePageHeader</span>
+                  <em>
+(verify home page header)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyHomePageTitle">
+                  </a> <!-- verifyHomePageTitle -->
+                  <span class="method-name">verifyHomePageTitle</span>
+                  <em>
+(verify home page title)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyHomePageTitle">
+                  </a> <!-- verifyHomePageTitle -->
+                  <span class="method-name">verifyHomePageTitle</span>
+                  <em>
+(verify home page title)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -183,18 +280,25 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/3b/yk_1bj_j0gn2ddm_zp36b6h40000gn/T/testng-eclipse-555140817/testng-customsuite.xml</span>
+            <span class="header-content">/Users/ahmetcturk/git/OrangeHRM/Framework_/src/test/resources/testrunners/ParallelExecution.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; name=&quot;Orange HRM Test 1&quot; parallel=&quot;classes&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.qa.orangehrm.tests.LoginPageTest&quot;/&gt;
+      &lt;class name=&quot;com.qa.orangehrm.tests.HomePageTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
+  &lt;/test&gt; &lt;!-- Orange HRM Test 1 --&gt;
+  &lt;test thread-count=&quot;2&quot; name=&quot;Orange HRM Test 2&quot; parallel=&quot;classes&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.orangehrm.tests.HomePageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Orange HRM Test 2 --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -206,7 +310,10 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">Orange HRM Test 1 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Orange HRM Test 2 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -232,32 +339,44 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(8);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginTest')
-data.setCell(0, 2, 'com.qa.orangehrm.tests.LoginPageTest')
-data.setCell(0, 3, 1338);
+data.setCell(0, 1, 'verifyLoggedInUserTest')
+data.setCell(0, 2, 'com.qa.orangehrm.tests.HomePageTest')
+data.setCell(0, 3, 916);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'loginTest2')
-data.setCell(1, 2, 'com.qa.orangehrm.tests.LoginPageTest')
-data.setCell(1, 3, 1204);
+data.setCell(1, 1, 'verifyHomePageHeader')
+data.setCell(1, 2, 'com.qa.orangehrm.tests.HomePageTest')
+data.setCell(1, 3, 781);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'loginTest3')
-data.setCell(2, 2, 'com.qa.orangehrm.tests.LoginPageTest')
-data.setCell(2, 3, 792);
+data.setCell(2, 1, 'verifyHomePageTitle')
+data.setCell(2, 2, 'com.qa.orangehrm.tests.HomePageTest')
+data.setCell(2, 3, 190);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'loginTest1')
-data.setCell(3, 2, 'com.qa.orangehrm.tests.LoginPageTest')
-data.setCell(3, 3, 720);
+data.setCell(3, 1, 'verifyHomePageHeader')
+data.setCell(3, 2, 'com.qa.orangehrm.tests.HomePageTest')
+data.setCell(3, 3, 18);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'getTitle')
-data.setCell(4, 2, 'com.qa.orangehrm.tests.LoginPageTest')
-data.setCell(4, 3, 41);
+data.setCell(4, 1, 'verifyLoggedInUserTest')
+data.setCell(4, 2, 'com.qa.orangehrm.tests.HomePageTest')
+data.setCell(4, 3, 5);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyAuthentication')
+data.setCell(5, 2, 'com.qa.orangehrm.tests.HomePageTest')
+data.setCell(5, 3, 4);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyHomePageTitle')
+data.setCell(6, 2, 'com.qa.orangehrm.tests.HomePageTest')
+data.setCell(6, 3, 3);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyAuthentication')
+data.setCell(7, 2, 'com.qa.orangehrm.tests.HomePageTest')
+data.setCell(7, 3, 3);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 1 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -283,66 +402,110 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.orangehrm.tests.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.qa.orangehrm.tests.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setUp</span>
+                <span class="method-name">setUp(firefox)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">getTitle</span>
-                <span class="method-start">1551 ms</span>
+                <span class="method-name">verifyHomePageTitle</span>
+                <span class="method-start">2591 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearUp</span>
-                <span class="method-start">1599 ms</span>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">2790 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyHomePageTitle</span>
+                <span class="method-start">2819 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">2824 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">1659 ms</span>
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">2865 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(firefox)</span>
+                <span class="method-start">3226 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">loginTest</span>
-                <span class="method-start">2611 ms</span>
+                <span class="method-name">verifyHomePageHeader</span>
+                <span class="method-start">4918 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyHomePageHeader</span>
+                <span class="method-start">5452 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearUp</span>
-                <span class="method-start">3950 ms</span>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">5473 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">5700 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">4007 ms</span>
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">5776 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(firefox)</span>
+                <span class="method-start">5888 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">loginTest1</span>
-                <span class="method-start">5308 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyLoggedInUserTest</span>
+                <span class="method-start">7982 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyLoggedInUserTest</span>
+                <span class="method-start">8078 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearUp</span>
-                <span class="method-start">6029 ms</span>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">8085 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">6085 ms</span>
+                <span class="method-name">setUp(firefox)</span>
+                <span class="method-start">8491 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">loginTest2</span>
-                <span class="method-start">7427 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearUp</span>
-                <span class="method-start">8632 ms</span>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">8900 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">8691 ms</span>
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">8974 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">loginTest3</span>
-                <span class="method-start">10038 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyAuthentication</span>
+                <span class="method-start">10782 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearUp</span>
-                <span class="method-start">10831 ms</span>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">10788 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyAuthentication</span>
+                <span class="method-start">11123 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">11127 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +102,22 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.qa.orangehrm.tests.HomePageTest" hash-for-method="checkAdminLink">checkAdminLink</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.qa.orangehrm.tests.AddEmployeeTest" hash-for-method="addEmployee_2(Bekir, Esen)">addEmployee_2(Bekir, Esen)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.qa.orangehrm.tests.AddEmployeeTest" hash-for-method="addEmployee_2(Talha, Komurcu)">addEmployee_2(Talha, Komurcu)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.qa.orangehrm.tests.AddEmployeeTest" hash-for-method="addEmployee_2(Elif, Bulut)">addEmployee_2(Elif, Bulut)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.qa.orangehrm.tests.AddEmployeeTest" hash-for-method="addEmployee_2(Fatih, Ugur)">addEmployee_2(Fatih, Ugur)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -120,16 +135,39 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.qa.orangehrm.tests.HomePageTest</span>
+              <span class="class-name">com.qa.orangehrm.tests.AddEmployeeTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="checkAdminLink">
-                  </a> <!-- checkAdminLink -->
-                  <span class="method-name">checkAdminLink</span>
-                  <em>
-(This method checks if admin link directing to the correct page)                  </em>
+                  <a name="addEmployee_2(Bekir, Esen)">
+                  </a> <!-- addEmployee_2(Bekir, Esen) -->
+                  <span class="method-name">addEmployee_2</span>
+                  <span class="parameters">(Bekir, Esen)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addEmployee_2(Talha, Komurcu)">
+                  </a> <!-- addEmployee_2(Talha, Komurcu) -->
+                  <span class="method-name">addEmployee_2</span>
+                  <span class="parameters">(Talha, Komurcu)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addEmployee_2(Elif, Bulut)">
+                  </a> <!-- addEmployee_2(Elif, Bulut) -->
+                  <span class="method-name">addEmployee_2</span>
+                  <span class="parameters">(Elif, Bulut)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addEmployee_2(Fatih, Ugur)">
+                  </a> <!-- addEmployee_2(Fatih, Ugur) -->
+                  <span class="method-name">addEmployee_2</span>
+                  <span class="parameters">(Fatih, Ugur)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -137,7 +175,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/3b/yk_1bj_j0gn2ddm_zp36b6h40000gn/T/testng-eclipse-453083835/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/3b/yk_1bj_j0gn2ddm_zp36b6h40000gn/T/testng-eclipse--1533822328/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -146,7 +184,11 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.qa.orangehrm.tests.HomePageTest&quot;/&gt;
+      &lt;class name=&quot;com.qa.orangehrm.tests.AddEmployeeTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;addEmployee_2&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.qa.orangehrm.tests.AddEmployeeTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -186,16 +228,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'checkAdminLink')
-data.setCell(0, 2, 'com.qa.orangehrm.tests.HomePageTest')
-data.setCell(0, 3, 1223);
+data.setCell(0, 1, 'addEmployee_2')
+data.setCell(0, 2, 'com.qa.orangehrm.tests.AddEmployeeTest')
+data.setCell(0, 3, 861);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'addEmployee_2')
+data.setCell(1, 2, 'com.qa.orangehrm.tests.AddEmployeeTest')
+data.setCell(1, 3, 829);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'addEmployee_2')
+data.setCell(2, 2, 'com.qa.orangehrm.tests.AddEmployeeTest')
+data.setCell(2, 3, 794);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'addEmployee_2')
+data.setCell(3, 2, 'com.qa.orangehrm.tests.AddEmployeeTest')
+data.setCell(3, 3, 631);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -210,9 +264,18 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.qa.orangehrm.tests.AddEmployeeTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">addEmployee</span>
+                <br/>
+                <span class="ignored-method-name">testUrl</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_suite" class="panel">
@@ -221,15 +284,55 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.orangehrm.tests.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.qa.orangehrm.tests.AddEmployeeTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">checkAdminLink</span>
-                <span class="method-start">3975 ms</span>
+                <span class="method-name">addEmployee_2(Talha, Komurcu)</span>
+                <span class="method-start">5543 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">6349 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">6839 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addEmployee_2(Bekir, Esen)</span>
+                <span class="method-start">11894 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">12726 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">13225 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addEmployee_2(Fatih, Ugur)</span>
+                <span class="method-start">18071 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">18704 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">19173 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addEmployee_2(Elif, Bulut)</span>
+                <span class="method-start">23846 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">24709 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

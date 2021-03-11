@@ -9,14 +9,40 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num">10,906</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Orange HRM Test 2</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">3</td><td class="num">11,208</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Orange HRM Test 1</a></td><td class="num">3</td><td class="num">0</td><td class="num attn">1</td><td class="num">11,220</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">4</th><th class="num">0</th><th class="num attn">4</th><th class="num">22,428</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">com.qa.orangehrm.tests.LoginPageTest</td><td><a href="#m0">getTitle</a></td><td rowspan="1">1614898830040</td><td rowspan="1">41</td></tr><tr class="passedeven"><td><a href="#m1">loginTest</a></td><td rowspan="1">1614898831100</td><td rowspan="1">1338</td></tr><tr class="passedeven"><td><a href="#m2">loginTest1</a></td><td rowspan="1">1614898833797</td><td rowspan="1">720</td></tr><tr class="passedeven"><td><a href="#m3">loginTest2</a></td><td rowspan="1">1614898835916</td><td rowspan="1">1204</td></tr><tr class="passedeven"><td><a href="#m4">loginTest3</a></td><td rowspan="1">1614898838527</td><td rowspan="1">792</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Orange HRM Test 2 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">com.qa.orangehrm.tests.HomePageTest</td><td><a href="#m0">verifyAuthentication</a></td><td rowspan="1">1615484898212</td><td rowspan="1">4</td></tr><tr class="failedeven"><td><a href="#m1">verifyHomePageHeader</a></td><td rowspan="1">1615484892882</td><td rowspan="1">18</td></tr><tr class="failedeven"><td><a href="#m2">verifyLoggedInUserTest</a></td><td rowspan="1">1615484895508</td><td rowspan="1">5</td></tr><tr><th colspan="4">Orange HRM Test 2 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.qa.orangehrm.tests.HomePageTest</td><td><a href="#m3">verifyHomePageTitle</a></td><td rowspan="1">1615484890249</td><td rowspan="1">3</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Orange HRM Test 1 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.qa.orangehrm.tests.HomePageTest</td><td><a href="#m4">verifyLoggedInUserTest</a></td><td rowspan="1">1615484895412</td><td rowspan="1">916</td></tr><tr><th colspan="4">Orange HRM Test 1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.qa.orangehrm.tests.HomePageTest</td><td><a href="#m5">verifyAuthentication</a></td><td rowspan="1">1615484898553</td><td rowspan="1">3</td></tr><tr class="passedeven"><td><a href="#m6">verifyHomePageHeader</a></td><td rowspan="1">1615484892348</td><td rowspan="1">781</td></tr><tr class="passedeven"><td><a href="#m7">verifyHomePageTitle</a></td><td rowspan="1">1615484890021</td><td rowspan="1">190</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.qa.orangehrm.tests.LoginPageTest#getTitle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.qa.orangehrm.tests.LoginPageTest#loginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.qa.orangehrm.tests.LoginPageTest#loginTest1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.qa.orangehrm.tests.LoginPageTest#loginTest2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.qa.orangehrm.tests.LoginPageTest#loginTest3</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Orange HRM Test 2</h2><h3 id="m0">com.qa.orangehrm.tests.HomePageTest#verifyAuthentication</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at com.qa.orangehrm.tests.HomePageTest.verifyAuthentication(HomePageTest.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 14 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.qa.orangehrm.tests.HomePageTest#verifyHomePageHeader</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Dashboard] but found [null]
+	at com.qa.orangehrm.tests.HomePageTest.verifyHomePageHeader(HomePageTest.java:50)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.qa.orangehrm.tests.HomePageTest#verifyLoggedInUserTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at com.qa.orangehrm.tests.HomePageTest.verifyLoggedInUserTest(HomePageTest.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 10 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.qa.orangehrm.tests.HomePageTest#verifyHomePageTitle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Orange HRM Test 1</h2><h3 id="m4">com.qa.orangehrm.tests.HomePageTest#verifyLoggedInUserTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at com.qa.orangehrm.tests.HomePageTest.verifyLoggedInUserTest(HomePageTest.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 14 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.qa.orangehrm.tests.HomePageTest#verifyAuthentication</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.qa.orangehrm.tests.HomePageTest#verifyHomePageHeader</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.qa.orangehrm.tests.HomePageTest#verifyHomePageTitle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

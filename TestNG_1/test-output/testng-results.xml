@@ -2,16 +2,23 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="23" started-at="2021-02-23T20:31:04Z" finished-at="2021-02-23T20:31:04Z">
+  <suite name="Suite" duration-ms="23" started-at="2021-03-11T18:00:34Z" finished-at="2021-03-11T18:00:34Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="23" started-at="2021-02-23T20:31:04Z" finished-at="2021-02-23T20:31:04Z">
+    <test name="Test Orange" duration-ms="23" started-at="2021-03-11T18:00:34Z" finished-at="2021-03-11T18:00:34Z">
       <class name="TestNG_1.TestNG_1.Class1">
-        <test-method status="PASS" signature="test1()[pri:0, instance:TestNG_1.TestNG_1.Class1@59f99ea]" name="test1" duration-ms="6" started-at="2021-02-23T20:31:04Z" finished-at="2021-02-23T20:31:04Z">
+        <test-method status="PASS" signature="test1(java.lang.String)[pri:0, instance:TestNG_1.TestNG_1.Class1@3e6fa38a]" name="test1" duration-ms="7" started-at="2021-03-11T18:00:34Z" finished-at="2021-03-11T18:00:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Hello World]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
       </class> <!-- TestNG_1.TestNG_1.Class1 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test Orange -->
+  </suite> <!-- Suite -->
 </testng-results>

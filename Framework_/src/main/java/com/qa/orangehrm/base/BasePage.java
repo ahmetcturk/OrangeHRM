@@ -23,11 +23,11 @@ public class BasePage {
 	}
 
 	// initialize driver
-	public WebDriver initialize_driver() {
+	public WebDriver initialize_driver(String browserName) {
 
 		properties = initialize_properties();
 
-		String browser = properties.getProperty("browserID");
+		String browser = browserName;
 		optionsManager = new OptionsManager(properties);
 		if (browser.equals("chrome")) {
 

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test name="Test Orange">
+
+		<parameter name = "parameter1" value = "Hello World"/>
+		<classes>
+			<class name="TestNG_1.TestNG_1.Class1" />
+
+		</classes>
+	</test>
+
+</suite>

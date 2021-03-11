@@ -15,9 +15,9 @@ public class ExcelUtil {
 	public static Sheet sheet;
 	
 	
-	public static String TESTDATA_SHEET_DATA ="/Users/ahmetcturk/Documents/workspace/OrangeHRM2021"
-			+ "/src/main/java/com/qa/orangehrm/testdata"
-			+ "/TestData_1.xlsx";
+	public static String TESTDATA_SHEET_DATA ="/Users/ahmetcturk/git"
+			+ "/OrangeHRM/OrangeHRM2021_Europe/src/main/java/"
+			+ "com/qa/orangehrm/testdata/EmployeeList.xlsx";
 	
 	
 	public static Object[][] getTestData(String sheetName) {

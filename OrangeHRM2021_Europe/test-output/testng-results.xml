@@ -1,21 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="2" total="6" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="5223" started-at="2021-03-04T22:43:00Z" finished-at="2021-03-04T22:43:06Z">
+  <suite name="Default suite" duration-ms="25545" started-at="2021-03-09T20:24:22Z" finished-at="2021-03-09T20:24:48Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="5223" started-at="2021-03-04T22:43:00Z" finished-at="2021-03-04T22:43:06Z">
-      <class name="com.qa.orangehrm.tests.HomePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.orangehrm.tests.HomePageTest@60704c]" name="setUp" is-config="true" duration-ms="3928" started-at="2021-03-04T22:43:00Z" finished-at="2021-03-04T22:43:04Z">
+    <test name="Default test" duration-ms="25545" started-at="2021-03-09T20:24:22Z" finished-at="2021-03-09T20:24:48Z">
+      <class name="com.qa.orangehrm.tests.AddEmployeeTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@23529fee]" name="setUp" is-config="true" duration-ms="5458" started-at="2021-03-09T20:24:23Z" finished-at="2021-03-09T20:24:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="checkAdminLink()[pri:0, instance:com.qa.orangehrm.tests.HomePageTest@60704c]" name="checkAdminLink" duration-ms="1223" started-at="2021-03-04T22:43:04Z" description="This method checks if admin link directing to the correct page" finished-at="2021-03-04T22:43:06Z">
+        <test-method status="PASS" signature="addEmployee_2(java.lang.String, java.lang.String)[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@23529fee]" name="addEmployee_2" duration-ms="794" started-at="2021-03-09T20:24:28Z" data-provider="getEmployees" finished-at="2021-03-09T20:24:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Talha]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Komurcu]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkAdminLink -->
-      </class> <!-- com.qa.orangehrm.tests.HomePageTest -->
+        </test-method> <!-- addEmployee_2 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@23529fee]" name="tearDown" is-config="true" duration-ms="489" started-at="2021-03-09T20:24:29Z" finished-at="2021-03-09T20:24:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@23529fee]" name="setUp" is-config="true" duration-ms="5054" started-at="2021-03-09T20:24:29Z" finished-at="2021-03-09T20:24:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="addEmployee_2(java.lang.String, java.lang.String)[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@23529fee]" name="addEmployee_2" duration-ms="829" started-at="2021-03-09T20:24:34Z" data-provider="getEmployees" finished-at="2021-03-09T20:24:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bekir]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Esen]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addEmployee_2 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@23529fee]" name="tearDown" is-config="true" duration-ms="498" started-at="2021-03-09T20:24:35Z" finished-at="2021-03-09T20:24:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@23529fee]" name="setUp" is-config="true" duration-ms="4845" started-at="2021-03-09T20:24:36Z" finished-at="2021-03-09T20:24:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="addEmployee_2(java.lang.String, java.lang.String)[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@23529fee]" name="addEmployee_2" duration-ms="631" started-at="2021-03-09T20:24:41Z" data-provider="getEmployees" finished-at="2021-03-09T20:24:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Fatih]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ugur]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addEmployee_2 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@23529fee]" name="tearDown" is-config="true" duration-ms="468" started-at="2021-03-09T20:24:41Z" finished-at="2021-03-09T20:24:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@23529fee]" name="setUp" is-config="true" duration-ms="4672" started-at="2021-03-09T20:24:42Z" finished-at="2021-03-09T20:24:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="addEmployee_2(java.lang.String, java.lang.String)[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@23529fee]" name="addEmployee_2" duration-ms="861" started-at="2021-03-09T20:24:46Z" data-provider="getEmployees" finished-at="2021-03-09T20:24:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Elif]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Bulut]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addEmployee_2 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@23529fee]" name="tearDown" is-config="true" duration-ms="478" started-at="2021-03-09T20:24:47Z" finished-at="2021-03-09T20:24:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.orangehrm.tests.AddEmployeeTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

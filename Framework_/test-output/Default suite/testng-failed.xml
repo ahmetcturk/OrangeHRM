@@ -1,13 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]" parallel="tests">
+  <test thread-count="2" name="Orange HRM Test 2(failed)" parallel="classes">
+    <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="com.qa.orangehrm.test_api.Test_Get">
+      <class name="com.qa.orangehrm.tests.HomePageTest">
         <methods>
-          <include name="method"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifyHomePageHeader"/>
+          <include name="verifyLoggedInUserTest"/>
+          <include name="verifyAuthentication"/>
         </methods>
-      </class> <!-- com.qa.orangehrm.test_api.Test_Get -->
+      </class> <!-- com.qa.orangehrm.tests.HomePageTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
+  </test> <!-- Orange HRM Test 2(failed) -->
+  <test thread-count="2" name="Orange HRM Test 1(failed)" parallel="classes">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.qa.orangehrm.tests.HomePageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifyLoggedInUserTest"/>
+        </methods>
+      </class> <!-- com.qa.orangehrm.tests.HomePageTest -->
+    </classes>
+  </test> <!-- Orange HRM Test 1(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
