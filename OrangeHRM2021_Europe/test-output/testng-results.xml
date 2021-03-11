@@ -1,109 +1,151 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="2" total="6" passed="4">
+<testng-results skipped="0" failed="2" ignored="0" total="4" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="25545" started-at="2021-03-09T20:24:22Z" finished-at="2021-03-09T20:24:48Z">
+  <suite name="Parallel Suite" duration-ms="8835" started-at="2021-03-11T20:54:57Z" finished-at="2021-03-11T20:55:05Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="25545" started-at="2021-03-09T20:24:22Z" finished-at="2021-03-09T20:24:48Z">
-      <class name="com.qa.orangehrm.tests.AddEmployeeTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@23529fee]" name="setUp" is-config="true" duration-ms="5458" started-at="2021-03-09T20:24:23Z" finished-at="2021-03-09T20:24:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="addEmployee_2(java.lang.String, java.lang.String)[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@23529fee]" name="addEmployee_2" duration-ms="794" started-at="2021-03-09T20:24:28Z" data-provider="getEmployees" finished-at="2021-03-09T20:24:29Z">
+    <test name="Parallel Test" duration-ms="5945" started-at="2021-03-11T20:54:57Z" finished-at="2021-03-11T20:55:02Z">
+      <class name="com.qa.orangehrm.tests.LoginPageTest">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.qa.orangehrm.tests.LoginPageTest@2805c96b]" name="setUp" is-config="true" duration-ms="2083" started-at="2021-03-11T20:54:57Z" finished-at="2021-03-11T20:54:59Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Talha]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Komurcu]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addEmployee_2 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@23529fee]" name="tearDown" is-config="true" duration-ms="489" started-at="2021-03-09T20:24:29Z" finished-at="2021-03-09T20:24:29Z">
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="loginTest()[pri:0, instance:com.qa.orangehrm.tests.LoginPageTest@2805c96b]" name="loginTest" duration-ms="1185" started-at="2021-03-11T20:54:59Z" description="This method checks if i can login to website with correct credentials" finished-at="2021-03-11T20:55:00Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [https://opensource-demo.orangehrmlive.com/index.php/dashboard!] but found [https://opensource-demo.orangehrmlive.com/index.php/dashboard]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [https://opensource-demo.orangehrmlive.com/index.php/dashboard!] but found [https://opensource-demo.orangehrmlive.com/index.php/dashboard]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at com.qa.orangehrm.tests.LoginPageTest.loginTest(LoginPageTest.java:59)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.orangehrm.tests.LoginPageTest@2805c96b]" name="tearDown" is-config="true" duration-ms="81" started-at="2021-03-11T20:55:00Z" finished-at="2021-03-11T20:55:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@23529fee]" name="setUp" is-config="true" duration-ms="5054" started-at="2021-03-09T20:24:29Z" finished-at="2021-03-09T20:24:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="addEmployee_2(java.lang.String, java.lang.String)[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@23529fee]" name="addEmployee_2" duration-ms="829" started-at="2021-03-09T20:24:34Z" data-provider="getEmployees" finished-at="2021-03-09T20:24:35Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.qa.orangehrm.tests.LoginPageTest@2805c96b]" name="setUp" is-config="true" duration-ms="1601" started-at="2021-03-11T20:55:00Z" finished-at="2021-03-11T20:55:02Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Bekir]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Esen]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addEmployee_2 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@23529fee]" name="tearDown" is-config="true" duration-ms="498" started-at="2021-03-09T20:24:35Z" finished-at="2021-03-09T20:24:36Z">
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginTest2()[pri:0, instance:com.qa.orangehrm.tests.LoginPageTest@2805c96b]" name="loginTest2" duration-ms="797" started-at="2021-03-11T20:55:02Z" description="This method checks if i can login to website with incorrect credentials" finished-at="2021-03-11T20:55:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest2 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.orangehrm.tests.LoginPageTest@2805c96b]" name="tearDown" is-config="true" duration-ms="84" started-at="2021-03-11T20:55:02Z" finished-at="2021-03-11T20:55:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@23529fee]" name="setUp" is-config="true" duration-ms="4845" started-at="2021-03-09T20:24:36Z" finished-at="2021-03-09T20:24:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="addEmployee_2(java.lang.String, java.lang.String)[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@23529fee]" name="addEmployee_2" duration-ms="631" started-at="2021-03-09T20:24:41Z" data-provider="getEmployees" finished-at="2021-03-09T20:24:41Z">
+      </class> <!-- com.qa.orangehrm.tests.LoginPageTest -->
+    </test> <!-- Parallel Test -->
+    <test name="Parallel Test 2" duration-ms="8835" started-at="2021-03-11T20:54:57Z" finished-at="2021-03-11T20:55:05Z">
+      <class name="com.qa.orangehrm.tests.LoginPageTest">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.qa.orangehrm.tests.LoginPageTest@f6efaab]" name="setUp" is-config="true" duration-ms="3474" started-at="2021-03-11T20:54:57Z" finished-at="2021-03-11T20:55:00Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Fatih]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Ugur]]>
+                <![CDATA[firefox]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addEmployee_2 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@23529fee]" name="tearDown" is-config="true" duration-ms="468" started-at="2021-03-09T20:24:41Z" finished-at="2021-03-09T20:24:42Z">
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="loginTest()[pri:0, instance:com.qa.orangehrm.tests.LoginPageTest@f6efaab]" name="loginTest" duration-ms="1129" started-at="2021-03-11T20:55:00Z" description="This method checks if i can login to website with correct credentials" finished-at="2021-03-11T20:55:01Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [https://opensource-demo.orangehrmlive.com/index.php/dashboard!] but found [https://opensource-demo.orangehrmlive.com/index.php/dashboard]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [https://opensource-demo.orangehrmlive.com/index.php/dashboard!] but found [https://opensource-demo.orangehrmlive.com/index.php/dashboard]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at com.qa.orangehrm.tests.LoginPageTest.loginTest(LoginPageTest.java:59)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.orangehrm.tests.LoginPageTest@f6efaab]" name="tearDown" is-config="true" duration-ms="447" started-at="2021-03-11T20:55:01Z" finished-at="2021-03-11T20:55:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@23529fee]" name="setUp" is-config="true" duration-ms="4672" started-at="2021-03-09T20:24:42Z" finished-at="2021-03-09T20:24:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="addEmployee_2(java.lang.String, java.lang.String)[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@23529fee]" name="addEmployee_2" duration-ms="861" started-at="2021-03-09T20:24:46Z" data-provider="getEmployees" finished-at="2021-03-09T20:24:47Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.qa.orangehrm.tests.LoginPageTest@f6efaab]" name="setUp" is-config="true" duration-ms="2684" started-at="2021-03-11T20:55:02Z" finished-at="2021-03-11T20:55:04Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Elif]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Bulut]]>
+                <![CDATA[firefox]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addEmployee_2 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@23529fee]" name="tearDown" is-config="true" duration-ms="478" started-at="2021-03-09T20:24:47Z" finished-at="2021-03-09T20:24:48Z">
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginTest2()[pri:0, instance:com.qa.orangehrm.tests.LoginPageTest@f6efaab]" name="loginTest2" duration-ms="624" started-at="2021-03-11T20:55:04Z" description="This method checks if i can login to website with incorrect credentials" finished-at="2021-03-11T20:55:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest2 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.orangehrm.tests.LoginPageTest@f6efaab]" name="tearDown" is-config="true" duration-ms="448" started-at="2021-03-11T20:55:05Z" finished-at="2021-03-11T20:55:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.orangehrm.tests.AddEmployeeTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.qa.orangehrm.tests.LoginPageTest -->
+    </test> <!-- Parallel Test 2 -->
+  </suite> <!-- Parallel Suite -->
 </testng-results>

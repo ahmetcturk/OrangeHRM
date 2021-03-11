@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.qa.orangehrm.base.BasePage;
@@ -27,17 +28,17 @@ public class AddEmployeeTest {
 	// setup : We need to go to addemployee page
 	
 	@BeforeMethod
-	public void setUp(){
+	@Parameters(value = {"browser"})
+	public void setUp(String browser){
 		basePage = new BasePage();
 		properties = basePage.initialize_properties();
-		driver = basePage.initialize_driver();
+		driver = basePage.initialize_driver(browser);
 		loginPage = new LoginPage(driver);
 		homePage = loginPage.doLogin(properties.getProperty("username"),
 				properties.getProperty("password"));
 		addEmployee = new AddEmployee(driver);
 		addEmployee.goToAddEmployee();
 	}
-	
 	
 	@DataProvider//(name = "Employee_List")
 	public Object [][] getEmployees(){

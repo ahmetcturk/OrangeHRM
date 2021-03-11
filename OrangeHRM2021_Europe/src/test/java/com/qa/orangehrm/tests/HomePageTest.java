@@ -5,6 +5,7 @@ import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.qa.orangehrm.base.BasePage;
@@ -22,10 +23,11 @@ public class HomePageTest {
 		HomePage homepage;
 		
 		@BeforeMethod
-		public void setUp(){
+		@Parameters(value = {"browser"})
+		public void setUp(String browser){
 			basePage = new BasePage();
 			properties = basePage.initialize_properties();
-			driver = basePage.initialize_driver();
+			driver = basePage.initialize_driver(browser);
 			loginPage = new LoginPage(driver);
 			homepage = loginPage.doLogin(properties.getProperty("username"),
 					properties.getProperty("password"));

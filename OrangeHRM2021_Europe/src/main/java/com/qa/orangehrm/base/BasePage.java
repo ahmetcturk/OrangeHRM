@@ -15,34 +15,39 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class BasePage {
 	
 	// Fields
-	WebDriver driver;
+	//WebDriver driver;
 	Properties properties;
 
 	// initialize_driver
+	
+	public static ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();
+	public static synchronized WebDriver getDriver(){
+		return driver.get();
+	}
 
-	public WebDriver initialize_driver(){
+	public WebDriver initialize_driver(String browser){
 		
 		properties = initialize_properties();
-		String browser = properties.getProperty("browser");
+		
 		String baseURL = properties.getProperty("url");
 		System.out.println(browser);
 		if (browser.equals("chrome")) {
 			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
+			driver.set(new ChromeDriver());
 		} else if(browser.equals("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
-			driver = new FirefoxDriver();
+			driver.set(new FirefoxDriver());
 		}
 		else {
 			System.out.println("Driver not found");
 		}
 		
 		// Driver options here
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
-		driver.manage().deleteAllCookies();
-		driver.get(baseURL);
-		return driver;
+		getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		getDriver().manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+		getDriver().manage().deleteAllCookies();
+		getDriver().get(baseURL);
+		return getDriver();
 	}
 	
 	// initialize_properties
